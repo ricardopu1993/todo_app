@@ -1,5 +1,8 @@
 import Config
 
+# Only in tests, remove the complexity from the password hashing algorithm
+config :bcrypt_elixir, :log_rounds, 1
+
 # Configure your database
 #
 # The MIX_TEST_PARTITION environment variable can be used
@@ -17,7 +20,7 @@ config :todo_app, TodoApp.Repo,
 # you can enable the server option below.
 config :todo_app, TodoAppWeb.Endpoint,
   http: [ip: {127, 0, 0, 1}, port: 4002],
-  secret_key_base: "UPzx/pCJbLC+bmxiisQXMYHGjnmnF9mL9Su14U4piBuGpyZuDPiApT0GF3nmKwCT",
+  secret_key_base: "cO4zBU8yOtTFZzqmws8lM8W7bauG00xJzYj+FzpaRtVHVEf+cGmytlhmhzTkKT16",
   server: false
 
 # In test we don't send emails.

@@ -5,7 +5,7 @@ config :todo_app, TodoApp.Repo,
   username: "postgres",
   password: "postgres",
   hostname: "localhost",
-  database: "todo_app_dev",
+  database: "todo_app",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
